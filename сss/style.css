@@ -262,7 +262,14 @@ menu .container ul li a:hover::after {
     position: relative;
 }
 
-.skills .line .skill-level p {
+.skills .line .skill-level .number {
+    color: #fff;
+    z-index: 5;
+    font-size: 14px;
+}
+.skills .line .skill-level span {
+    color: #fff;
+    z-index: 5;
     font-size: 14px;
 }
 
@@ -274,7 +281,7 @@ menu .container ul li a:hover::after {
     background-color: rgb(90, 122, 210);
 }
 
-.skills .line .skill-level .html-css {
+/* .skills .line .skill-level .html-css {
     width: 80%;
 }
 
@@ -296,7 +303,7 @@ menu .container ul li a:hover::after {
 
 .skills .line .skill-level .education {
     width: 100%;
-}
+} */
 
 .skills .line .skill-level p {
     z-index: 2;
