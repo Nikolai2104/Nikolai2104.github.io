@@ -11,12 +11,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    height: 5000px;
 }
 
 .container {
     width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 h1 {
@@ -68,6 +68,7 @@ header .container .soc-logo {
 menu {
     top: 0;
     margin: 0;
+    padding: 0;
     position: sticky;
     z-index: 20;
     background-color: #fff;
@@ -116,12 +117,20 @@ menu .container ul li a:hover::after {
 /* works ========================== */
 .works {
     background-color: #fff;
+    margin-top: 80px;
+}
+
+.works>h2 {
+    color: #343434;
+    text-align: center;
+    padding: 40px 0;
 }
 
 .works .container {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    padding: 0 0 40px 0;
 }
 
 .works .container a {
@@ -139,6 +148,7 @@ menu .container ul li a:hover::after {
     text-align: center;
     position: relative;
     overflow: hidden;
+    filter: brightness(0.7);
 }
 
 .works .container .image img {
@@ -175,6 +185,9 @@ menu .container ul li a:hover::after {
     z-index: 5;
 }
 
+.works .container .image:hover{
+    filter: brightness(1);
+}
 .works .container .image:hover::before {
     transform: scaleX(1);
 }
@@ -203,4 +216,120 @@ menu .container ul li a:hover::after {
     transform: translateY(-25px);
     color: #fff;
     opacity: 0;
+}
+/* skills ========================== */
+.skills {
+    background-color: #fff;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.skills .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills>h2 {
+    color: #343434;
+    text-align: center;
+    padding: 40px 0;
+}
+.skills .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .line .skill-name{
+    flex: 1 1 20%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.skills .line .skill-level{
+    flex: 1 1 80%;
+    height: 20px;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.skills .line .skill-level p{
+    font-size: 14px;
+}
+.skills .line .skill-level .skill-now{
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    height: 90%;
+    background-color: rgb(90, 122, 210);
+}
+.skills .line .skill-level .html-css{
+    width: 80%;
+}
+.skills .line .skill-level .bootstrap{
+    width: 50%;
+}
+.skills .line .skill-level .js-jquery{
+    width: 40%;
+}
+.skills .line .skill-level .php{
+    width: 20%;
+}
+.skills .line .skill-level .wordpress{
+    width: 30%;
+}
+.skills .line .skill-level .education{
+    width: 100%;
+}
+.skills .line .skill-level p {
+    z-index: 2;
+    color: #fff;
+}
+/* resume ========================== */
+.resume {
+    background-color: #fff;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.resume .container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.resume .container .photo{
+    padding-top: 40px;
+    flex: 30%;
+    margin-right: 15px;
+}
+.resume .container .description{
+    flex: 70%;
+    margin-left: 15px;
+}
+.resume .container .description h2{
+    margin: 40px 0 60px 0;
+    color: #343434;
+}
+.resume .container .description a{
+    padding: 10px 15px;
+    background-color: rgb(90, 122, 210);
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.resume .container .description a:hover{
+    transform: scale(1.05);
+    background-color: rgbrgb(119, 143, 220);
+}
+/* footer ========================== */
+footer p{
+    font-size: 14px;
+    text-align: center;
 }
