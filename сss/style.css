@@ -185,9 +185,10 @@ menu .container ul li a:hover::after {
     z-index: 5;
 }
 
-.works .container .image:hover{
+.works .container .image:hover {
     filter: brightness(1);
 }
+
 .works .container .image:hover::before {
     transform: scaleX(1);
 }
@@ -217,13 +218,15 @@ menu .container ul li a:hover::after {
     color: #fff;
     opacity: 0;
 }
+
 /* skills ========================== */
 .skills {
     background-color: #fff;
     margin-top: 80px;
     padding-bottom: 40px;
 }
-.skills .container{
+
+.skills .container {
     display: flex;
     flex-direction: column;
 }
@@ -233,20 +236,23 @@ menu .container ul li a:hover::after {
     text-align: center;
     padding: 40px 0;
 }
+
 .skills .line {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.skills .line .skill-name{
+
+.skills .line .skill-name {
     flex: 1 1 20%;
     height: 40px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.skills .line .skill-level{
+
+.skills .line .skill-level {
     flex: 1 1 80%;
     height: 20px;
     background-color: #e9e9e9;
@@ -255,63 +261,78 @@ menu .container ul li a:hover::after {
     align-items: center;
     position: relative;
 }
-.skills .line .skill-level p{
+
+.skills .line .skill-level p {
     font-size: 14px;
 }
-.skills .line .skill-level .skill-now{
+
+.skills .line .skill-level .skill-now {
     position: absolute;
     left: 0%;
     z-index: 1;
     height: 90%;
     background-color: rgb(90, 122, 210);
 }
-.skills .line .skill-level .html-css{
+
+.skills .line .skill-level .html-css {
     width: 80%;
 }
-.skills .line .skill-level .bootstrap{
+
+.skills .line .skill-level .bootstrap {
     width: 50%;
 }
-.skills .line .skill-level .js-jquery{
+
+.skills .line .skill-level .js-jquery {
     width: 40%;
 }
-.skills .line .skill-level .php{
+
+.skills .line .skill-level .php {
     width: 20%;
 }
-.skills .line .skill-level .wordpress{
+
+.skills .line .skill-level .wordpress {
     width: 30%;
 }
-.skills .line .skill-level .education{
+
+.skills .line .skill-level .education {
     width: 100%;
 }
+
 .skills .line .skill-level p {
     z-index: 2;
     color: #fff;
 }
+
 /* resume ========================== */
 .resume {
     background-color: #fff;
     margin-top: 80px;
     padding-bottom: 40px;
 }
-.resume .container{
+
+.resume .container {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.resume .container .photo{
+
+.resume .container .photo {
     padding-top: 40px;
     flex: 30%;
     margin-right: 15px;
 }
-.resume .container .description{
+
+.resume .container .description {
     flex: 70%;
     margin-left: 15px;
 }
-.resume .container .description h2{
+
+.resume .container .description h2 {
     margin: 40px 0 60px 0;
     color: #343434;
 }
-.resume .container .description a{
+
+.resume .container .description a {
     padding: 10px 15px;
     background-color: rgb(90, 122, 210);
     border: none;
@@ -324,12 +345,14 @@ menu .container ul li a:hover::after {
     text-transform: uppercase;
     text-decoration: none;
 }
-.resume .container .description a:hover{
+
+.resume .container .description a:hover {
     transform: scale(1.05);
     background-color: rgbrgb(119, 143, 220);
 }
+
 /* footer ========================== */
-footer p{
+footer p {
     font-size: 14px;
     text-align: center;
 }
