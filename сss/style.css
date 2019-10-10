@@ -212,6 +212,9 @@ menu .container ul li a:hover::after {
 .works .container .image .description h2 {
     transition: all 0.3s;
     transform: translateY(25px);
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black
 }
 
 .works .container .image .description p {
@@ -219,6 +222,10 @@ menu .container ul li a:hover::after {
     transform: translateY(-25px);
     color: #fff;
     opacity: 0;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black
 }
 
 /* skills ========================== */
