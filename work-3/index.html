@@ -17,9 +17,9 @@
     <menu>
         <div class="container">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Portofolio</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abot">About Us</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Services</a></li>
@@ -36,12 +36,14 @@
         </div>
     </div>
 
-    <div class="head-line">
-        <div class="head-slider">
+    <div class="head-line" id="home">
+        <div class="head-slider" id="slider">
             <img src="img/Slide-1.jpg" alt="">
-            <button class="prev"></button>
-            <button class="next"></button>
+            <img src="img/Slide-2.jpg" alt="">
+            <img src="img/Slide-3.jpg" alt="">
         </div>
+        <button class="prev"></button>
+        <button class="next"></button>
         <div class="head-text">
             <h2>why <span>creativia ?</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl
@@ -54,7 +56,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="abot">
         <h2>about <span>creativia</span></h2>
         <p>Lorem ipsum, dolor sit amet consectetur <span>adipisicing elit.</span> Deleniti, dolore ipsa aut maiores
             magnam temporibus voluptas, ea excepturi harum magni?</p>
@@ -139,6 +141,29 @@
             </div>
         </div>
     </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio__portfolio-name">
+            <h2>portfolio</h2>
+            <ul id="portfolio-var">
+                <li class="active" id="all">All</li>
+                <li id="illustration">Illustration</li>
+                <li id="digital">Digital art</li>
+                <li id="design">Web design</li>
+            </ul>
+        </div>
+        <div class="portfolio__portfolio-var">
+            <img class="illustration design" src="img/Portfolio-1.jpg" alt="">
+            <img class="digital design" src="img/Portfolio-2.jpg" alt="">
+            <img class="digital" width="400px" src="img/Portfolio-9.jpg" alt="">
+            <img class="illustration" src="img/Portfolio-3.jpg" alt="">
+            <img class="illustration design" src="img/Portfolio-6.jpg" alt="">
+            <img class="digital design" src="img/Portfolio-8.jpg" alt="">
+            <img class="digital" src="img/Portfolio-7.jpg" alt="">
+            <img class="illustration" src="img/Portfolio-1.jpg" alt="">
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

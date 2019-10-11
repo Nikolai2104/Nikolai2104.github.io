@@ -96,40 +96,46 @@ menu .container ul li a:hover::after{
     background-color: black;
 }
 .head-line .head-slider{
-    display: flex;
-    justify-content: center;
     position: relative;
+    overflow: hidden;
+    height: 756px;
 }
 .head-line .head-slider img{
+    flex: 1 1 100%;
     width: 100%;
     filter: brightness(0.4);
+    position: absolute;
+    transition: all 1s;
 }
-.head-line .head-slider button{
+.head-line .head-slider .opacity{
+    opacity: 0;
+}
+.head-line > button{
     position: absolute;
     top: 50%;
     border: none;
     width: 17px;
     height: 28px;
 }
-.head-line .head-slider button.prev{
+.head-line > button.prev{
     left: 5%;
     background: url(../img/prev.png) center center;
     background-size: contain;
     transition: all 0.3s;
 }
-.head-line .head-slider button.prev:hover{
+.head-line > button.prev:hover{
     background: url(../img/next.png) center center;
     background-size: contain;
     transform: rotate(180deg);
 }
-.head-line .head-slider button.next{
+.head-line > button.next{
     right: 5%;
     background: url(../img/prev.png) center center;
     transform: rotate(180deg);
     background-size: contain;
     transition: all 0.3s;
 }
-.head-line .head-slider button.next:hover{
+.head-line > button.next:hover{
     background: url(../img/next.png) center center;
     transform: rotate(0deg);
     background-size: contain;
@@ -243,7 +249,6 @@ menu .container ul li a:hover::after{
 .about .container .right img{
     transform: scale(0.8);
     position: absolute;
-    cursor: pointer;
     top: 0;
     transition: all 0.5s;
 }
@@ -255,6 +260,7 @@ menu .container ul li a:hover::after{
     right: 90px;
     transform: scale(1);
     z-index: 5;
+    cursor: pointer;
 }
 .about .container .right img.img-3{
     right: -40px;
@@ -277,4 +283,49 @@ menu .container ul li a:hover::after{
 .about .container-icon .about-icon h3{
     margin: 35px 0;
     text-transform: uppercase;
+}
+/* portfolio ============================= */
+.portfolio {
+    background-color: #262626;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.portfolio .portfolio__portfolio-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio .portfolio__portfolio-name h2{
+    color: #fff;
+}
+.portfolio .portfolio__portfolio-name ul{
+    display: flex;
+}
+.portfolio .portfolio__portfolio-name ul li{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.portfolio .portfolio__portfolio-name ul li.active{
+    color: #ff0036;
+}
+.portfolio .portfolio__portfolio-var{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.portfolio .portfolio__portfolio-var img{
+    cursor: pointer;
+    max-width: 400px;
+}
+.portfolio .portfolio__portfolio-var img:hover{
+    filter: brightness(0.7);
+    z-index: 5;
+    transform: scale(1.01);
 }

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // Плавный скролл по странице
     $('a[href^="#"]').click(function () {
         elementClick = $(this).attr("href");
         destination = $(elementClick).offset().top - 60;
