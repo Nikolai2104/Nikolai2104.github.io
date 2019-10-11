@@ -168,7 +168,7 @@ menu .container ul li a:hover::after{
 }
 /* about ============================= */
 .about {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: justify;
 }
 .about > p{
@@ -328,4 +328,69 @@ menu .container ul li a:hover::after{
     filter: brightness(0.7);
     z-index: 5;
     transform: scale(1.01);
+}
+/* team ============================= */
+.team {
+    padding-top: 100px;
+    text-align: center;
+}
+.team .team__group{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.team .team__group .team__group__person{
+    width: 270px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #e7e7e7;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s;
+}
+.team .team__group .team__group__person.active{
+    border: 2px solid #262626;
+}
+.team .team__group .team__group__person > img{
+    width: 268px;
+}
+.team .team__group .team__group__person h3{
+    text-transform: uppercase;
+    margin: 25px 0;
+    transition: all 0.3s;
+}
+.team .team__group .team__group__person h3.active{
+    color: #ff0036;
+}
+.team .team__group .team__group__person .team__group__person__opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.team .team__group .team__group__person .team__group__person__opacity.active{
+    opacity: 1;
+}
+.team .team__group .team__group__person .team__group__person__opacity img{
+    top: 40%;
+}
+.team .team__group .team__group__person .team__group__person__opacity img{
+    margin: 10px;
+    cursor: pointer;
+}    
+/* skills ============================= */
+.skills {
+    text-align: center;
+    margin-top: 100px;
 }

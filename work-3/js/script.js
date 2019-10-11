@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Плавный скролл по странице
     $('a[href^="#"]').click(function () {
         elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top - 48;
+        destination = $(elementClick).offset().top ;
         $('html').animate({ scrollTop: destination }, 1100);
         return false;
     });
@@ -79,24 +79,19 @@ $(document).ready(function () {
         }
     });
 
-    // Портфолио наведение на фото
-    // $('.portfolio__portfolio-var img').hover(function(){
-    //     $(this).animate({opacity: "0.5"},300);
-    // });
-    // $('.portfolio__portfolio-var img').mouseLeave(function(){
-    //     $(this).animate({opacity: "1"},300);
-    // });
-    // let a = 1.05;
-    // let b = 1;
-    // $('.portfolio__portfolio-var img').hover(function () {
-    //     // over
-    //     $(this).css({ transform: "scale( 1.05 )" });
-    //     console.log($(this));
+    // Team наведение на фото
 
-    // }, function () {
-    //     // out
-    //     $(this).css({ transform: "scale( 1 )" });
-    // }
-    // );
+    $('.team__group__person__opacity').mouseenter(function () {
+        $(this).addClass('active');
+        $(this).parent().find('h3').addClass('active');
+        $(this).parent().addClass('active');
+    });
+    $('.team__group__person__opacity').mouseleave(function () {
+        // setInterval(() => {
+            $(this).removeClass('active');
+            $(this).parent().find('h3').removeClass('active');
+            $(this).parent().removeClass('active');
+        // }, 5000);
+    });
 
 });
