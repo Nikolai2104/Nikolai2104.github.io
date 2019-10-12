@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Плавный скролл по странице
     $('a[href^="#"]').click(function () {
         elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top ;
+        destination = $(elementClick).offset().top;
         $('html').animate({ scrollTop: destination }, 1100);
         return false;
     });
@@ -88,10 +88,57 @@ $(document).ready(function () {
     });
     $('.team__group__person__opacity').mouseleave(function () {
         // setInterval(() => {
-            $(this).removeClass('active');
-            $(this).parent().find('h3').removeClass('active');
-            $(this).parent().removeClass('active');
+        $(this).removeClass('active');
+        $(this).parent().find('h3').removeClass('active');
+        $(this).parent().removeClass('active');
         // }, 5000);
     });
 
+
+
+
+
+
+
+
+    var cc = 1;
+    var time = 1;
+    $(window).on('scroll', function () {
+        var
+            w_top = $(window).scrollTop(),
+            e_top = $('.skill-section').offset().top -200;
+        console.log(w_top + ' ' + e_top);
+        if (e_top <= w_top) {
+            if (cc < 2) {
+                const circle = document.querySelectorAll('.progress-ring__circle');
+                let percent = document.querySelectorAll('.skill-bar span');
+                
+                function setProgress() {
+                    for(let i = 0; i < circle.length; i++) {
+                
+                        const radius = circle[i].r.baseVal.value;
+                
+                        const circumference = 2 * Math.PI * radius;
+                
+                
+                        const offset = circumference - parseInt(percent[i].innerHTML) / 100 * circumference;
+                        console.log(offset);
+                
+                        circle[i].style.strokeDasharray = `${circumference} ${circumference}`;
+                
+                        circle[i].style.strokeDashoffset = circumference;
+                
+                        circle[i].style.strokeDashoffset = offset;
+                    }
+                }
+                setProgress();
+                
+
+                cc = cc + 2;
+            }
+        }
+    });
 });
+
+// Skill level ring
+

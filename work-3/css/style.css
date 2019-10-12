@@ -24,7 +24,7 @@ span{
     color: #ff0036;
 }
 p {
-    line-height: 1.4em;
+    line-height: 1.3em;
 }
 /* menu ============================= */
 menu {
@@ -393,4 +393,279 @@ menu .container ul li a:hover::after{
 .skills {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px;
+}
+.skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.skill-var{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 15px 0 15px;
+}
+.skill-var h3{
+    margin: 25px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.progress-ring {
+    width: 150px;
+    height: 150px;
+}
+.progress-ring__circle{
+    stroke: #ff0036;
+    stroke-width: 4;
+    fill: transparent;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.5s;
+}
+.skill-bar {
+    position: relative;
+}
+.skill-bar h4{
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* services ============================= */
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #272727;
+    color: #a4a4a4;
+}
+.services h3, .services h2 {
+    color: #fff;
+}
+.services .services-section{
+    margin-top: 50px;
+    display: flex;flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.services .services-section .services-var{
+    max-width: 570px;
+    text-align: justify;
+    margin-top: 50px;
+}
+.services .services-section .services-var:hover .services-description p{
+    color: #fff;
+}
+.services .services-section .services-var:hover .services-description{
+    background-color: #3d2329;
+}
+.services .services-section .services-var:hover .services-name .img-1{
+    background: url(../img/acrive-devel.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var:hover .services-name .img-2{
+    background: url(../img/active-html.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var:hover .services-name .img-3{
+    background: url(../img/active-wp.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var:hover .services-name .img-4{
+    background: url(../img/active-aplic.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var:hover .services-name .img-5{
+    background: url(../img/active-ui-ux.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var:hover .services-name .img-6{
+    background: url(../img/active-respon.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.services .services-section .services-var .services-name .img{
+    width: 57px;
+    height: 47px;
+    margin-right: 30px;
+    transition: all 0.3s;
+}
+.services .services-section .services-var .services-name .img-1{
+    background: url(../img/services-devel.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name .img-2{
+    background: url(../img/services-html.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name .img-3{
+    background: url(../img/services-wp.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name .img-4{
+    background: url(../img/services-aplic.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name .img-5{
+    background: url(../img/services-ui-ux.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-name .img-6{
+    background: url(../img/services-respon.png) center center;
+    background-size: cover;
+}
+.services .services-section .services-var .services-description{
+    background-color: #343434;
+    padding: 1.2em 2em;
+    transition: all 0.3s;
+}
+.services-description p{
+    transition: all 0.3s;
+}
+/* blog ============================= */
+.blog{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.blog .container{
+    width: 970px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog .container > h2{
+    text-align: center;
+}
+.blog .container > p{
+    text-align: center;
+}
+.blog .container .section-blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.blog .container .section-blogs .box-blog{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog .container .section-blogs .box-blog .img-blog-1{
+    width: 370px;
+    height: 200px;
+    background: url(../img/blog-img-1.jpg) center center;
+    background-size: cover;
+}
+.blog .container .section-blogs .box-blog .img-blog-2{
+    width: 370px;
+    height: 200px;
+    background: url(../img/blog-img-2.jpg) center center;
+    background-size: cover;
+}
+.blog .container .section-blogs .box-blog .description-blog{
+    width: 570px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    text-align: justify;
+}
+.blog .container .section-blogs .box-blog .description-blog .icons-blog{
+    display: flex;
+    align-items: center;   
+    margin: 10px 0;
+}
+.blog .container .section-blogs .box-blog .description-blog .icons-blog span{
+    color: #a2a2a2;
+    margin: 0 10px;
+}
+.blog .container .section-blogs .box-blog .description-blog .btn-blog{
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    background-color: #343434;
+    transition: all 0.3s;
+}
+.blog .container .section-blogs .box-blog .description-blog .btn-blog:hover{
+    background-color: #ff0036;
+}
+/* contact ============================= */
+.contact {
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+}
+.contact > p{
+    margin-bottom: 100px;
+}
+.contact form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 460px;
+    height: 480px;
+    box-shadow: 0 5px 5px rgba(134, 134, 134, 0.6);
+    position: absolute;
+    top: 71%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.contact form h3{
+    margin: 50px;
+    text-transform: uppercase;
+}
+.contact form input{
+    width: 360px;
+    margin: 10px auto;
+}
+.contact form textarea{
+    width: 360px;
+    height: 120px;
+    margin: 10px auto;
+}
+.contact form button{
+    display: inline-block;
+    text-align: right;
+    text-transform: uppercase;
+    border: none;
+    background-color: #343434;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 50px 0 auto;
+    transition: all 0.3s;
+}
+.contact form button:hover{
+    background-color: #ff0036;
+}
+/* footer ============================= */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #232323;
+}
+footer h3{
+    font-size: 24px;
+    color: #a2a2a2;
 }
