@@ -1,0 +1,113 @@
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #343434; }
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px; }
+
+.menu {
+  position: relative;
+  background-color: #9303A7;
+  height: 80px; }
+
+.menu > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu i {
+  font-size: 46px;
+  color: #fff; }
+
+.main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0; }
+  .main-menu ul a {
+    color: #fff;
+    position: relative;
+    text-decoration: none; }
+    .main-menu ul a::after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      display: block;
+      height: 1px;
+      left: 0;
+      bottom: -5px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      width: 0; }
+    .main-menu ul a:hover::after {
+      width: 100%; }
+
+#burger {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 5; }
+
+.burger-menu {
+  background-color: #9303A7;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  top: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: 105%;
+  z-index: 4; }
+  .burger-menu li {
+    padding: 15px 0; }
+  .burger-menu a {
+    color: #fff;
+    position: relative;
+    text-decoration: none; }
+    .burger-menu a::after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      display: block;
+      height: 1px;
+      left: 0;
+      bottom: -5px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      width: 0; }
+    .burger-menu a:hover::after {
+      width: 100%; }
+
+.active-menu {
+  right: 0; }
+
+.side-bar {
+  background-color: #C038D3; }
+  .side-bar ul li {
+    list-style: none; }
+  .side-bar .sb {
+    color: #fff;
+    font-weight: 600; }
+  .side-bar ul li a {
+    color: #e7bdec;
+    font-weight: normal; }
+
+.footer {
+  background-color: #60016D;
+  color: #fff; }
+  .footer p {
+    font-size: 12px;
+    margin: 0; }
+  .footer i {
+    font-size: 24px; }

@@ -94,13 +94,7 @@ $(document).ready(function () {
         // }, 5000);
     });
 
-
-
-
-
-
-
-
+// Skill level ring
     var cc = 1;
     var time = 1;
     $(window).on('scroll', function () {
@@ -139,6 +133,3 @@ $(document).ready(function () {
         }
     });
 });
-
-// Skill level ring
-

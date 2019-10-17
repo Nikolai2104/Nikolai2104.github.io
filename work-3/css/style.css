@@ -425,10 +425,11 @@ menu .container ul li a:hover::after{
 .progress-ring__circle{
     stroke: #ff0036;
     stroke-width: 4;
+    stroke-dashoffset: 420;
     fill: transparent;
     transform-origin: center;
     transform: rotate(-90deg);
-    transition: stroke-dashoffset 0.5s;
+    transition: stroke-dashoffset 1s;
 }
 .skill-bar {
     position: relative;

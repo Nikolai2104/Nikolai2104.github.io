@@ -14,10 +14,11 @@ $(document).ready(function () {
         var
             w_top = $(window).scrollTop(),
             e_top = $('#skills').offset().top - 65;
-        console.log(w_top + ' ' + e_top);
+        // console.log(w_top + ' ' + e_top);
         if (e_top <= w_top) {
             if (cc < 2) {
                 $('.number').each(function () {
+                    console.log(this);
                     var
                         i = 1,
                         num = $(this).data('num'),
@@ -31,6 +32,7 @@ $(document).ready(function () {
                             }
                             i++;
                         }, step);
+                        console.log(num);
                 });
 
                 $('.skill-now').each(function () {
