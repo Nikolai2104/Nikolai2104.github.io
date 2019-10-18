@@ -1,0 +1,108 @@
+.block {
+    border: 1px solid black;
+    width: 80%;
+    max-width: 1599px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.block form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.block form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.block div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.block.w-640{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.block.w-640 form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.block.w-640 div{
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    margin-left: 4%;
+}
+.block.w-1024{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.block.w-1024 form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 96%;
+}
+.block.w-1024 div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+}
+.block.w-1599{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.block.w-1599 form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.block.w-1599 div{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin-left: 32px;
+}
+.block form input{
+    position: relative;
+}
+.block form input:invalid {
+    border: 1px solid red;
+}
+.help-text{
+    font-size: 12px;
+    margin-top: 0.5em;
+}
+.block form input:placeholder-shown + .help-text{
+    color: red;
+}
+.block label{
+    margin: 0;
+    margin-top: 1em;
+}
