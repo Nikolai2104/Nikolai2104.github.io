@@ -10,25 +10,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/block.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/brands.css">
     <link rel="stylesheet" href="css/solid.css"> -->
+    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script> -->
 
     <title>Test work</title>
 </head>
 
 <body>
 
+    <div class="search">
+        <label for="">
+            <h3>Поиск</h3>
+            <input id="elastic" type="text">
+        </label>
+    </div>
+
     <div class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-4 col-12 title d-flex">
+                <div class="col-md-12 col-12 title d-flex">
                     <h1>Книга контактов</h1>
-                </div>
-                <div class="col-md-6">
                 </div>
             </div>
         </div>
@@ -38,39 +44,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10 col-12">
-                    <div class="row">
-                        <div class="col-12 settings mt-2">
+                <div class="col-md-auto center col-12 pb-5">
+                    <div class="row wrap">
+                        <div class="col-12 settings mt-4">
                             <h3>Сортировать по:</h3>
-                            <select name="" id="">
-                                <option value="alfavit">Имя</option>
-                                <option value="alfavit">Имя пользователя</option>
-                                <option value="alfavit">E-mail</option>
-                                <option value="alfavit">Телефон</option>
-                                <option value="alfavit">Адрес</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mt-2 users">
-                            <div class="row person">
-                                <div class="col-md-6 data-main">
-                                    <h3>Имя: <span id="name"></span></h3>
-                                    <h3>Имя пользователя: <span id="username"></span></h3>
-                                    <h3>E-mail: <span id="email"></span></h3>
-                                    <h3>Телефон: <span id="phone"></span></h3>
-                                </div>
-                                <div class="col-md-6 data-address">
-                                    <h3>Улица А: <span id="streetA"></span></h3>
-                                    <h3>Улица B: <span id="streetB"></span></h3>
-                                    <h3>Улица C: <span id="streetC"></span></h3>
-                                    <h3>Улица D: <span id="streetD"></span></h3>
-                                    <h3>Город: <span id="city"></span></h3>
-                                </div>
-                            </div>
-                            <div class="change">
-                                <button>Изменить</button>
-                                <button>Удалить</button>
+                            <div class="form-group">
+                                <select class="custom-select" onchange="sort()">
+                                    <option value="1">Имени</option>
+                                    <option value="2">Имени пользователя</option>
+                                    <option value="3">Телефону</option>
+                                    <option value="4">Адресу</option>
+                                </select>
+                                <div class="invalid-feedback">Example invalid custom select feedback</div>
                             </div>
                         </div>
+                        <div id="userBox" class="col-12 mt-4">
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -78,12 +69,47 @@
         </div>
     </div>
 
+    <div id="chageBox" class="col-lg-12">
+
+        <div class="wrap">
+            <div class="changebox">
+                <div class="row changeperson">
+                    <div class="col-lg-3 ml-2 mr-2 photo">
+                        <img id="photo" src="https://s3.amazonaws.com/uifaces/faces/twitter/devinhalladay/128.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 ml-2 mr-2 dataMain">
+                        <h3>Имя: <br> <input id="name" placeholder="123" value=""></h3>
+                        <h3>Имя пользователя: <br> <input id="username" placeholder="" value=""></h3>
+                        <h3>E-mail: <br> <input id="email" placeholder="" value=""></h3>
+                        <h3>Телефон: <br> <input id="phone" placeholder="" value=""></h3>
+                        <h3>Сайт: <br> <input id="website" placeholder="" value=""></h3>
+                    </div>
+                    <div class="col-lg-4 ml-2 mr-2 data-address">
+                        <h3>Улица А: <br> <input id="streetA" placeholder=""></h3>
+                        <h3>Улица B: <br> <input id="streetB" placeholder=""></h3>
+                        <h3>Улица C: <br> <input id="streetC" placeholder=""></h3>
+                        <h3>Улица D: <br> <input id="streetD" placeholder=""></h3>
+                        <h3>Город: <br> <input id="city" placeholder=""></h3>
+                    </div>
+                </div>
+                <div class="change mt-4">
+                    <button id="save" type="button" class="btn btn-success">Сохранить</button>
+                    <button id="cancel" type="button" class="btn btn-light">Отменить</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -91,8 +117,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- <script src="https://kit.fontawesome.com/f7629da905.js" crossorigin="anonymous"></script> -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> -->
     <script src="js/script.js"></script>
 </body>
 
