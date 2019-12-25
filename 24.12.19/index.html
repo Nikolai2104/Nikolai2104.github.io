@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="indicator">
+    <div class="indicator__header">
+      <p class="title">Target indicator Demo</p>
+    </div>
+    <div class="indicator__contain">
+      <div class="indicator__window">
+        <div class="reached">
+          <div class="reached__top">
+            <div class="reached__title">
+              Reached:
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__line">
+                <div id="reachedBar" class="progress-bar__line_state">
+                  <div id="curentValue" class="progress-bar__curent-value">
+                    $
+                  </div>
+                </div>
+              </div>
+              <div id="target" class="target">
+                <div class="target__title">
+                  Target
+                </div>
+                <div class="target__hr">
+
+                </div>
+                <div id="targetValue" class="target__value">
+                  $15
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="info" class="reached__footer">
+            <div class="reached__info">
+              <img src="img/iconfinder_Info_32687.png" width="5%" alt="">
+              <p>You need $<span id="balance">1</span> more to reach your target</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
