@@ -6,7 +6,7 @@ const target = document.querySelector('#target');
 const targetValue = parseInt(document.querySelector('#targetValue').innerHTML.replace(/\D+/g, ''));
 
 const xhr = new XMLHttpRequest;
-xhr.open('GET', 'http://alex.devel.softservice.org/testapi/');
+xhr.open('GET', 'https://alex.devel.softservice.org/testapi/');
 xhr.send();
 
 xhr.onreadystatechange = () => {
